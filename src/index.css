@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96%;
+    --foreground: 240 10% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 8%;
+    --primary: 258 84% 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 5% 92%;
+    --secondary-foreground: 240 6% 20%;
+    --muted: 240 5% 92%;
+    --muted-foreground: 240 4% 46%;
+    --accent: 258 84% 58%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 88%;
+    --input: 240 6% 88%;
+    --ring: 258 84% 58%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 240 10% 5%;
+    --foreground: 0 0% 90%;
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 90%;
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 258 84% 65%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 5% 14%;
+    --secondary-foreground: 0 0% 80%;
+    --muted: 240 5% 14%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 258 84% 65%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 14%;
+    --input: 240 5% 14%;
+    --ring: 258 84% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/30 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}
+
+/* Staggered card animations */
+.movie-card-enter {
+  animation: fade-in 0.4s ease-out both;
+}
