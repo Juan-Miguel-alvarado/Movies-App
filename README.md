@@ -2,7 +2,8 @@
 
 A movie search and discovery app built with React, Vite, shadcn/ui, and Tabler Icons. Data is powered by [The Movie Database (TMDb)](https://www.themoviedb.org/) API.
 
-<img width="1366" height="768" alt="Movies" src="https://github.com/user-attachments/assets/c33a2d91-1f0c-4f78-b360-027cf12aa4f2" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/30650f4a-6223-4984-82c6-cba2666fbba1" />
+
 
 
 ## Features
